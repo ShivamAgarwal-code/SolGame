@@ -23,7 +23,7 @@
 
 .initialized {
   color: #fff !important;
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 .main {

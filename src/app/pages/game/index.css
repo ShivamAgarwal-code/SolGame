@@ -1,7 +1,7 @@
 .game {
   display: flex;
-  width: 80vw;
-  margin: auto;
+  width: 90vw;
+  margin-right: 5px;
   align-items: center;
   justify-content: center;
   margin-top: 100px;

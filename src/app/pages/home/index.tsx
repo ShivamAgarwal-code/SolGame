@@ -40,9 +40,9 @@ export const Home = () => {
   const [initialized, setInitialized] = useState(false);
 
   const initialize = () => {
-    if (initialized) {
+    // if (initialized) {
       setStartGame(true);
-    }
+    // }
   };
 
   useEffect(() => {

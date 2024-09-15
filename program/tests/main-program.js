@@ -5,9 +5,7 @@ const assert = require("assert");
 describe("dungeon", () => {
   // const provider = anchor.Provider.local();
 
-  // anchor.setProvider(provider);
-
-  // const program = anchor.workspace.MainProgram;
+  
 
   // let mint = null;
   // let pda = null;

@@ -1,3 +1,5 @@
+// Adding the js files for the tests
+
 const anchor = require("@project-serum/anchor");
 const { TOKEN_PROGRAM_ID, Token } = require("@solana/spl-token");
 const assert = require("assert");

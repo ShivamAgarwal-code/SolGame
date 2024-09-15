@@ -8,7 +8,6 @@ use {
     thiserror::Error,
 };
 
-/// Errors that may be returned by the Auction program.
 #[derive(Clone, Debug, Eq, Error, FromPrimitive, PartialEq)]
 pub enum AuctionError {
     /// Account does not have correct owner

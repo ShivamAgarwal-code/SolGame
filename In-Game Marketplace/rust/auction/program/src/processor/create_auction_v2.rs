@@ -31,7 +31,6 @@ pub struct CreateAuctionArgsV2 {
     pub winners: WinnerLimit,
     /// End time is the cut-off point that the auction is forced to end by. See AuctionData.
     pub end_auction_at: Option<UnixTimestamp>,
-    /// Gap time is how much time after the previous bid where the auction ends. See AuctionData.
     pub end_auction_gap: Option<UnixTimestamp>,
     /// Token mint for the SPL token used for bidding.
     pub token_mint: Pubkey,

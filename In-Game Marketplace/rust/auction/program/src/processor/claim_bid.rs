@@ -1,5 +1,4 @@
 //! Claim bid winnings into a target SPL account, only the authorised key can do this, though the
-//! target can be any SPL account.
 
 use crate::{
     errors::AuctionError,

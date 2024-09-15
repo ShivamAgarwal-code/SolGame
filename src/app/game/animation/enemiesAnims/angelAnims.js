@@ -1,4 +1,4 @@
-
+// adding the animations for the files
 export const createAngelAnims = (anims) => {
   anims.create({
     key: "angel-run",

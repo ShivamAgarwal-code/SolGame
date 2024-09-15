@@ -1,8 +1,5 @@
 //! Cancels an existing bid. This only works in two cases:
 //!
-//! 1) The auction is still going on, in which case it is possible to cancel a bid at any time.
-//! 2) The auction has finished, but the bid did not win. This allows users to claim back their
-//!    funds from bid accounts.
 
 use crate::{
     errors::AuctionError,

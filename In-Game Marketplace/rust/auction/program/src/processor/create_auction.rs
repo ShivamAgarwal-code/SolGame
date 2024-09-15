@@ -36,7 +36,6 @@ pub struct CreateAuctionArgs {
     pub token_mint: Pubkey,
     /// Authority
     pub authority: Pubkey,
-    /// The resource being auctioned. See AuctionData.
     pub resource: Pubkey,
     /// Set a price floor.
     pub price_floor: PriceFloor,

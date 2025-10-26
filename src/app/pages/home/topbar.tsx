@@ -230,12 +230,6 @@ export const Topbar = () => {
       <Badge 
         badgeContent={"Alpha"} 
         color="primary"
-        style={{
-          "& .MuiBadge-badge": {
-            background: "linear-gradient(45deg, #667eea 0%, #764ba2 100%)",
-            animation: "pulse 2s infinite"
-          }
-        }}
       >
         <Button
           style={{ 

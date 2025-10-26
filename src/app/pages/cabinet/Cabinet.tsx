@@ -85,7 +85,7 @@ export const Cabinet = () => {
             <h3 style={{ 
               color: "white", 
               fontSize: "28px",
-              fontWeight: "700",
+              fontWeight: 700,
               textAlign: "center",
               marginBottom: "30px",
               background: "linear-gradient(45deg, #fff 0%, #00DDC2 100%)",
@@ -144,7 +144,7 @@ export const Cabinet = () => {
             <h3 style={{ 
               color: "white", 
               fontSize: "28px",
-              fontWeight: "700",
+              fontWeight: 700,
               textAlign: "center",
               marginBottom: "30px",
               background: "linear-gradient(45deg, #fff 0%, #00DDC2 100%)",

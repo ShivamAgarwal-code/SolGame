@@ -18,8 +18,19 @@ const Intro: React.FC<IntroProps> = ({ onStart, collectedTreasures, initialized 
       <img src={Logo} alt="Solhunt" />
       <div className="starters">
         <h3 className={initialized ? 'initialized' : ''} onClick={onStart}>
-          {collectedTreasures ? "Continue" : "New Game"}
+          {collectedTreasures ? "🎮 Continue Adventure" : "🚀 Start New Game"}
         </h3>
+        {initialized && (
+          <p style={{
+            color: "rgba(255, 255, 255, 0.7)",
+            textAlign: "center",
+            fontSize: "16px",
+            marginTop: "20px",
+            textShadow: "0 2px 10px rgba(0, 0, 0, 0.5)"
+          }}>
+            Click to enter the magical world of Solhunt!
+          </p>
+        )}
       </div>
     </div>
   );

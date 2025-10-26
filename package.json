@@ -93,8 +93,8 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && node scripts/start.js",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && node scripts/build.js",
     "test": "node scripts/test.js",
     "initialize": "node scripts/initializeGameAdmin.js",
     "deploy": "npx surge build solhunt.surge.sh"

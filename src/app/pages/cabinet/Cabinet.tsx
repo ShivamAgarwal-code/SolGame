@@ -62,15 +62,38 @@ export const Cabinet = () => {
     <div>
       <Topbar />
       <div className="nfts-container">
-        <h3 className="heading">🏆 Your trophy cabinet 🏆</h3>
+        <h3 className="heading">🏆 Your Trophy Cabinet 🏆</h3>
         {loading && (
           <div className="loading">
-            <CircularProgress />
+            <CircularProgress 
+              style={{ 
+                color: "#667eea",
+                filter: "drop-shadow(0 0 10px rgba(102, 126, 234, 0.5))"
+              }} 
+            />
+            <h3 style={{ 
+              color: "#fff", 
+              marginLeft: "20px",
+              textShadow: "0 2px 10px rgba(0, 0, 0, 0.5)"
+            }}>
+              Loading your treasures...
+            </h3>
           </div>
         )}
         {!loading && purchases.length > 0 && (
           <div className="container">
-            <h3 style={{ color: "white" }}>Your Purchases</h3>
+            <h3 style={{ 
+              color: "white", 
+              fontSize: "28px",
+              fontWeight: "700",
+              textAlign: "center",
+              marginBottom: "30px",
+              background: "linear-gradient(45deg, #fff 0%, #00DDC2 100%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              textShadow: "0 2px 10px rgba(0, 0, 0, 0.3)"
+            }}>🛒 Your Purchases</h3>
             <div className="nfts">
               {purchases.map(
                 ({ img, title, category, attributes, content }) => {
@@ -118,7 +141,18 @@ export const Cabinet = () => {
         )}
         {!loading && (
           <div className="container">
-            <h3 style={{ color: "white" }}>Your Rewards</h3>
+            <h3 style={{ 
+              color: "white", 
+              fontSize: "28px",
+              fontWeight: "700",
+              textAlign: "center",
+              marginBottom: "30px",
+              background: "linear-gradient(45deg, #fff 0%, #00DDC2 100%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              textShadow: "0 2px 10px rgba(0, 0, 0, 0.3)"
+            }}>🎁 Your Rewards</h3>
             <div className="nfts">
               {nfts.map(({ img, title, category, attributes, content }) => (
                 <div className="nft">

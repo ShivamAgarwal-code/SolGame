@@ -1,0 +1,11 @@
+# Charms Apps Directory
+
+This directory will contain Charms apps created using the Charms CLI.
+
+To create a new Charms app:
+```bash
+cargo install --locked Charms
+cd charms-apps
+Charms app new my-token
+```
+

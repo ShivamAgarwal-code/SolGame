@@ -97,7 +97,8 @@
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && node scripts/build.js",
     "test": "node scripts/test.js",
     "initialize": "node scripts/initializeGameAdmin.js",
-    "deploy": "npx surge build solhunt.surge.sh"
+    "deploy": "npx surge build solhunt.surge.sh",
+    "setup-charms": "bash scripts/setup-charms.sh || scripts\\setup-charms.bat"
   },
   "eslintConfig": {
     "extends": [

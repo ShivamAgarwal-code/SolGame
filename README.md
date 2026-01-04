@@ -45,6 +45,43 @@ We built a lightweight pixel Play To Earn dungeon game built on the Solana Block
 # Tech Stack
 Anchor Frame along with Solana Program Library and Rust Smart Contracts were used to build the dApp and the game is built on React and Phaser.
 
+## Charms Protocol Integration
+
+SolGame now includes integration with the **Charms protocol** for Bitcoin-based programmable tokens and NFTs. Charms enables building custom apps on Bitcoin with app state management using spells in Taproot witnesses.
+
+### Features
+- **Programmable Tokens**: Create and manage tokens on Bitcoin
+- **NFT Support**: Mint and manage NFTs with app state
+- **Spell System**: Execute custom logic using Taproot witnesses
+- **State Management**: Maintain app state for game assets
+
+### Quick Setup
+
+1. **Install Charms CLI**:
+   ```bash
+   cargo install --locked Charms
+   ```
+
+2. **Create a Charms App**:
+   ```bash
+   cd charms-apps
+   Charms app new solgame-tokens
+   ```
+
+3. **Use in Your Components**:
+   ```tsx
+   import { CharmsProvider, useCharms } from './app/web3/charms';
+   
+   // Wrap your app
+   <CharmsProvider network="testnet">
+     {/* Your components */}
+   </CharmsProvider>
+   ```
+
+For detailed integration guide, see [docs/CHARMS_INTEGRATION.md](./docs/CHARMS_INTEGRATION.md)
+
+**Documentation**: [Charms Development Integration](https://docs.bitcoinos.build/technical-documentation/grail-pro-charms-zkbtc/technical-overview/charms/charms-development-integration)
+
 ![image](./screenshots/9.png)
 
 ## Quick Start
@@ -54,6 +91,8 @@ This app requires the following dependancies. Before continuing, download and in
 - [Node.js](https://nodejs.org/en/download/) Node.js 10 or higher is required.
 - [Anchor](https://project-serum.github.io/anchor/getting-started/installation.html#install-solana) Install version v0.13.2
 - [Solana Tool Suite](https://docs.solana.com/cli/install-solana-cli-tools)
+- [Rust](https://www.rust-lang.org/tools/install) (for Charms protocol integration)
+- [Charms CLI](https://docs.bitcoinos.build/technical-documentation/grail-pro-charms-zkbtc/technical-overview/charms/charms-development-integration) - Install with `cargo install --locked Charms`
 
 ## Update Environment Variables
 
